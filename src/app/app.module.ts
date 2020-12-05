@@ -3,18 +3,24 @@ import { NgModule } from '@angular/core';
 //rutaas
 import { APP_ROUTES } from './app.routes';
 
+//module
+import { PegesModule } from './pages/peges.module';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
-import { NopagefoundComponent } from './pages/nopagefound/nopagefound.component';
-import { DashboardComponent } from './pages/dashboard/dashboard.component';
-import { ProgressComponent } from './pages/progress/progress.component';
-import { Graficas1Component } from './pages/graficas1/graficas1.component';
+import { NopagefoundComponent } from './shared/nopagefound/nopagefound.component';
+
 import { HeaderComponent } from './shared/header/header.component';
 import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { BreadcrumbsComponent } from './shared/breadcrumbs/breadcrumbs.component';
 import { PegesComponent } from './pages/peges.component';
 import { RegisterComponent } from './login/register.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { ProgressComponent } from './pages/progress/progress.component';
+import { Graficas1Component } from './pages/graficas1/graficas1.component';
+
+
 
 
 
@@ -22,21 +28,24 @@ import { RegisterComponent } from './login/register.component';
   declarations: [
     AppComponent,
     LoginComponent,
-    NopagefoundComponent,
-    DashboardComponent,
-    ProgressComponent,
-    Graficas1Component,
-    HeaderComponent,
-    SidebarComponent,
-    BreadcrumbsComponent,
-    PegesComponent,
+    //NopagefoundComponent,
+   // PegesComponent,
+   // DashboardComponent,
+   // ProgressComponent,
+    //Graficas1Component,
+    //HeaderComponent,
+    //SidebarComponent,
+    //BreadcrumbsComponent,
+    //PegesComponent,
     RegisterComponent
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    APP_ROUTES
+    APP_ROUTES,
+    PegesModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
